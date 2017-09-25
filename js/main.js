@@ -15,6 +15,7 @@ $(window).scroll(function() {
 
 
 $(document).ready(function() {
+    console.log('THIS PORTFOLIO IS OUTDATED, FOR MY LATEST WORK CHECK MY GITHUB: https://github.com/olli208')
     //containerexp animatie
     $('.containerexp').mouseenter(function() {
         $(this).animate({"margin-top":"-0.4em"}, 100);
