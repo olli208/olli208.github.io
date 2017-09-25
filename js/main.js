@@ -21,7 +21,7 @@ $(document).ready(function() {
         //$(this).find('.cont').animate({"margin-top":"-0.1em"}, 100);
         $(this).find('.glyphicon').animate({"margin-top":"-0.02em"}, 100);
         $(this).css('background' , '#fff');
-        $(this).find('h3').css('color' , '#1DE9B6');
+        $(this).find('h3').css('color' , '#eb5070');
         $(this).find('p').css('color' , '#656565');
         $(this).find('p').css('display' , 'block');
         $(this).find('.glyphicon').css('color' , '#fff');
