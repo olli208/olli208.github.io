@@ -1,0 +1,31 @@
+//  Mixins
+
+// Project Pagina
+
+//Nav
+@mixin nav-hover {
+    a:hover {
+        color: inherit;
+        font-weight: 500;
+    }
+    .light:hover {
+        color: inherit;
+        font-weight: 500;
+    }
+}
+
+// etc.
+@mixin border-project {
+    height: 1em;
+    width: 11%;
+    margin: 1.5em 0 0 0;
+    margin-bottom: 2.5em;
+}
+
+@mixin project-info {
+    box-shadow: $my-boxshadow;
+    padding: 1.5em;
+    li {
+        color: white;
+    }
+}

@@ -1,0 +1,941 @@
+@import "style.scss","mixins.scss","variables.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: $bg-color;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+}
+
+#helemaalniks {
+    visibility: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+#niks {
+    display: none;
+}
+
+
+/* DESKTOP/ LAPTOP */
+
+@media(min-width:768px) {
+    a {
+        color: $accent-color;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: $accent-color;
+        }
+    }
+    .light {
+        font-family: $main-font;
+        font-weight: 400;
+    }
+    /* NAVIGATION BAR_____________________*/
+    .navbar-custom {
+        text-transform: uppercase;
+        font-family: $main-font, Helvetica, Arial, sans-serif;
+        padding-top: 0.1em;
+        max-height: 3em;
+        background: #0D0D0D;
+        /*KLEUR ACHTERGROND NAV */
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+        .navbar-brand {
+            font-size: 1.215em;
+            font-weight: 400;
+            .navbar-toggle {
+                font-size: 1em;
+                color: $bg-color;
+                &:focus,
+                &:active {
+                    color: $accent-color;
+                    outline: 0;
+                }
+            }
+            .light:hover {
+                color: $accent-color;
+                outline: 0;
+            }
+        }
+        a {
+            color: $bg-color;
+            font-size: 1.1em;
+            font-weight: 400;
+            margin: 0 0.5em 0.5em 0em;
+        }
+        .top-nav-collapse {
+            display: none;
+            padding: 0.5em 1em;
+            background: $accent-color;
+        }
+    }
+    .navbar-custom .nav li a {
+        -webkit-transition: background .3s ease-in-out;
+        -moz-transition: background .3s ease-in-out;
+        transition: background .3s ease-in-out;
+    }
+    .navbar-custom .nav li a:hover {
+        outline: 0;
+        color: $accent-color;
+        background-color: transparent;
+        height: 100%;
+    }
+    .navbar-custom .nav li a:focus,
+    .navbar-custom .nav li a:active {
+        outline: 0;
+        background-color: transparent;
+    }
+    .navbar-custom .nav li.active {
+        outline: 0;
+    }
+    .navbar-custom .nav li.active a {
+        color: $accent-color;
+    }
+    .navbar-custom .nav li.active a:hover {
+        color: $accent-color;
+    }
+}
+
+
+/*INTRO */
+
+.intro {
+    min-height: 65vh;
+    max-height: 65vh;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #272822;
+    background-size: cover;
+    transition: height 999999s;
+    .intro-text {
+        font-family: $main-font;
+        font-weight: 700;
+        margin-top: 1em;
+        text-align: center;
+        font-size: 8em;
+        order: 1;
+        width: 100%;
+        color: $accent-color;
+    }
+    .btn {
+        order: 2;
+        display: none;
+    }
+    .logo {
+        height: auto;
+        width: 10%;
+        order: 2;
+        animation-delay: 5s;
+        animation: fadein 3s;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.7;
+    }
+}
+
+
+/* SECTION ABOUTHOME_____________________*/
+
+#abouthome {
+    padding-top: 0;
+    background-color: #0D0D0D;
+    min-height: 40vh;
+    max-height: auto;
+}
+
+#abouthome > .container {
+    padding: 1.5em 0em;
+}
+
+#welkom {
+    max-width: 65%;
+    margin: 0 auto;
+    color: $bg-color;
+    h3 {
+        text-align: center;
+        color: $bg-color;
+    }
+}
+
+.profiel {
+    display: inline-block;
+    height: 25%;
+    width: 25%;
+}
+
+
+/* SECTION expertise_____________________*/
+
+#expertise {
+    color: $p-color;
+    min-height: 55em;
+    max-height: 55em;
+    max-width: 100%;
+    padding-top: 0;
+    .container {
+        padding: 2.5em 1.5em;
+        color: $p-color;
+    }
+}
+
+#watikdoe {
+    max-width: 65%;
+    margin: 0 auto;
+    h3 {
+        text-align: center;
+    }
+}
+
+.containerexp {
+    max-width: 33%;
+    padding: 1.5em 0.5em;
+    margin: 2.5em 4.165%;
+    text-align: center;
+    background: $accent-color;
+    min-height: 25em;
+    max-height: 25em;
+    border: 1px solid rgba(40, 40, 40, 0.15);
+    box-shadow: $my-boxshadow;
+    animation: 1s;
+    .glyphicon {
+        font-size: 2.5em;
+        margin-top: 2.5em;
+        color: $p-color;
+        opacity: 0.7;
+    }
+    h3 {
+        color: $bg-color;
+        font-weight: 700;
+        opacity: 0.9;
+    }
+    p {
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    min-height: 2.5em;
+    background: black;
+    clear: both;
+    padding: 1.5em;
+    text-align: center;
+    p {
+        font-size: 1em;
+        margin: 0;
+        color: $p-color;
+    }
+}
+
+
+/* COLUNS Custom */
+
+.col-lg-4,
+.col-lg-6,
+.col-lg-8,
+.col-lg-10 {
+    padding: 1em;
+}
+
+.col-md-7,
+.col-md-5,
+.col-md-6 {
+    padding: 1em;
+}
+
+.col-lg-12 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+/* PORTFOLIO _____________________________________*/
+
+.portfolioBanner {
+    height: 15em;
+    background: url(http://i.giphy.com/3o6UBoANT7P1wu8kX6.gif) no-repeat center center scroll;
+    background-size: cover;
+    display: none;
+}
+
+.portBanner {
+    min-height: 50vh;
+    max-height: 50vh;
+    min-width: 50%;
+    max-width: 50%;
+    padding: 1em;
+    background: url(http://i.giphy.com/3o6UBoANT7P1wu8kX6.gif) no-repeat center center scroll;
+    background-size: cover;
+}
+
+#portfolioNew {
+    background-color: #272822;
+    min-height: 100%;
+    min-width: 100%;
+    padding: 0;
+    margin-bottom: 7em;
+    box-shadow: $my-boxshadow;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#portfolioNew {
+    .container-fluid {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 100%;
+        padding: 1em;
+    }
+}
+
+.proj {
+    min-height: 50vh;
+    max-height: 50vh;
+    min-width: 25%;
+    max-width: 25%;
+    border: 1px solid rgba(150, 150, 150, 0.6);
+    .projecth2 {
+        display: none;
+    }
+    p {
+        display: none;
+        a:hover {
+            color: $p-color;
+        }
+    }
+    &:hover {
+        .projecth2 {
+            font-weight: 700;
+            font-size: 5em;
+            display: block;
+            max-width: 100%;
+            color: #f9f9f9;
+        }
+        p {
+            display: block;
+        }
+        .container {
+            padding: 0.1em;
+            max-width: 100%;
+            background: rgba(102, 102, 102, 0.5);
+            background-size: cover;
+            min-height: inherit;
+        }
+    }
+}
+
+#proj1 {
+    background: url(/img/BVA/bvaportbanner.png) no-repeat center center;
+    background-size: cover;
+}
+
+#proj2 {
+    background: url(/img/DTRHportbanner.png) no-repeat center center;
+    background-size: cover;
+}
+
+#proj3 {
+    background: url(/img/feportbanner.png) no-repeat center center;
+    background-size: cover;
+}
+
+#proj4 {
+    background: url(/img/jsportbanner.png) no-repeat center center;
+    background-size: cover;
+}
+
+#proj5 {
+    background: url(/img/vormportbanner.png) no-repeat center center;
+    background-size: cover;
+}
+
+#proj6 {
+    background: url(/img/ISportbanner.png) no-repeat center center;
+    background-size: cover;
+}
+
+#proj7 {
+    background: url(/img/triggi/portfolio-grid.png) no-repeat center center;
+    background-size: cover;
+}
+
+.projknop {
+    font-size: 1.215em;
+    background: $bg-color;
+    padding: 0.6em;
+    margin: 0.1em;
+    color: $accent-color;
+    font-family: $main-font;
+    font-weight: 500;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#contact {
+    min-height: 50vh;
+    max-height: 50vh;
+    min-width: 25%;
+    max-width: 25%;
+    padding: 1em;
+    text-align: center;
+    background: $bg-color;
+    border: 1px solid rgba(40, 40, 40, 0.15);
+    p {
+        margin: 0;
+        padding: 0;
+        a {
+            color: $p-color;
+        }
+    }
+    h3 {
+        font-weight: 700;
+        color: $accent-color;
+    }
+    img {
+        max-height: auto;
+        width: 50%;
+        margin: 2em auto;
+        border: 5px solid white;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+    }
+}
+
+
+/* PROJECT PAGINA__________________________________*/
+#nav-bva {
+    background: $bva-color-1;
+    color: white;
+    @include nav-hover;
+}
+
+#nav-tr {
+    background: #554df2;
+    color: white;
+    @include nav-hover;
+}
+#nav-dtrh {
+    background: $dtrh-color-1;
+    color: white;
+    @include nav-hover;
+}
+#nav-fe {
+    background: $p-color;
+    color: white;
+    @include nav-hover;
+}
+#nav-pr {
+    background: $pr-color-1;
+    @include nav-hover;
+    a, .light {
+        color: $p-color;
+    }
+}
+#nav-vg {
+    background: $vg-color-1;
+    color: white;
+    @include nav-hover;
+}
+
+.project-header {
+    height: 30%;
+}
+#project-header-bva {
+    background: $bva-color-1;
+}
+#project-header-dtrh {
+    background: $dtrh-color-1;
+}
+#project-header-fe {
+    background: $p-color;
+}
+#project-header-pr {
+    background: $pr-color-1;
+}
+#project-header-vg {
+    background: $vg-color-1;
+}
+
+#project-header-tr {
+    background: #554df2;
+}
+
+
+
+.project-container {
+    margin-top: -10em;
+    .project-image {
+        height: 22em;
+        box-shadow: $my-boxshadow;
+    }
+    #project-image-dp {
+        background: white;
+        img {
+            margin-top: 10%;
+        }
+    }
+    #project-image-dtrh {
+        background: $dtrh-color-2;;
+        img {
+            margin: 1em 0;
+            height: 90%;
+            width: auto;
+        }
+    }
+    #project-image-fe {
+        background: $fe-color-1;
+        img {
+            margin: 6% 0;
+            height: 50%;
+            width: auto;
+        }
+    }
+    #project-image-pr {
+        background: $pr-color-2;
+        color: white;
+        img {
+            height: 100%;
+            width: auto;
+            margin: 0;
+        }
+    }
+    #project-image-vg {
+        background: $vg-color-2;
+        img {
+            height: 100%;
+            width: auto;
+            margin: 0;
+        }
+    }
+
+    #project-image-tr {
+        background: #fff;
+        img {
+            height: 100%;
+            width: auto;
+            margin: 0;
+        }
+    }
+    
+    .container-fluid {
+        background: #fff;
+        margin-bottom: 2.5em;
+        box-shadow: $my-boxshadow;
+        border-top: 1px solid rgba(40, 40, 40, 0.15);
+        
+        li {
+            color: $p-color;
+        }
+
+        #voorbeeld-case {
+            background: #f9f9f9;
+            padding: 1em;
+            margin: 2.5em 0;
+            .col-sm-6, col-md-4 {
+                margin: 2.5em 0;
+            }
+        }
+        h2,
+        h3,
+        h4 {
+            margin-top: 0;
+        }
+        p {
+            margin-bottom: 2em;
+        }
+    }
+    .col-md-6,
+    .col-md-8,
+    .col-md-3,
+    .col-sm-12 {
+        margin-top: 2em;
+        padding: 0 2em;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        #border-bva {
+            @include border-project;
+            background: $bva-color-2;
+        }
+        #border-dtrh {
+            @include border-project;
+            background: $dtrh-color-3;
+        }
+        #border-fe {
+            @include border-project;
+            background: $fe-color-1;
+        }
+        #border-pr {
+            @include border-project;
+            background: $pr-color-2;
+        }
+        #border-vg {
+            @include border-project;
+            background: $vg-color-2;
+        }
+
+        #border-tr {
+            @include border-project;
+            background: #554df2;
+        }
+
+        b {
+            color: inherit;
+        }
+    }
+    
+    #project-info-bva {
+        @include project-info;
+        background: $bva-color-1;
+        color: white;
+    }
+    #project-info-dtrh {
+        @include project-info;
+        background: $dtrh-color-1;
+        color: white;
+    }  
+    #project-info-fe {
+        @include project-info;
+        background: $p-color;
+        color: white;
+        li {
+            color: inherit;
+        }
+    }   
+    #project-info-pr {
+        @include project-info;
+        background: $pr-color-1;
+        color: $p-color;
+        li {
+            color: inherit;
+        }
+    }  
+    #project-info-vg {
+        @include project-info;
+        background: $vg-color-1;
+        color: white;
+        li {
+            color: inherit;
+        }
+    }
+
+    #project-info-tr {
+        @include project-info;
+        background: #554df2;
+        color: white;
+        li {
+            color: inherit;
+        }
+    }
+    
+}
+
+
+/* CURRICILUM VITAE __________________________________*/
+
+#cvheader {
+    padding: 5em 0;
+    background-size: cover;
+    background: url("../img/cvbanner.png") no-repeat center center fixed;
+}
+
+#cvheader h1 {
+    font-family: $main-font;
+    color: $accent-color;
+}
+
+#cvheader h2 {
+    color: $bg-color;
+}
+
+.cvcontainer {
+    vertical-align: text-top;
+    min-height: 3em;
+}
+
+.cvcontainer p {
+    padding: 0;
+    margin: 0;
+}
+
+.cvcontainer h4 {
+    color: #13c095;
+}
+
+#cv {
+    background: $bg-color;
+    min-height: auto;
+    padding: 2.5em 0;
+}
+
+#links {
+    color: $p-color;
+    vertical-align: text-top;
+    min-height: 3em;
+}
+
+/* TABLET GROOT ___________________________________*/
+
+@media only screen and (max-width: 100em) {
+    .intro-text {
+        font-size: 6.854em;
+        order: 1;
+    }
+    #welkom {
+        max-width: 90%;
+    }
+    #expertise {
+        min-height: 105vh;
+        max-height: auto;
+    }
+    #watikdoe {
+        max-width: 90%;
+    }
+    .containerexp {
+        min-height: 22em;
+        max-height: 22em;
+    }
+    /* PORTOFOLIO TABLET*/
+    .portfolioBanner {
+        display: block;
+        min-height: 33vh;
+    }
+    .portBanner {
+        display: none;
+    }
+    .proj {
+        min-height: 50vh;
+        max-height: 50vh;
+        min-width: 33.33%;
+        max-width: 33.33%;
+    }
+    #contact {
+        min-height: 50vh;
+        max-height: 50vh;
+        min-width: 33.33%;
+        max-width: 33.33%;
+    }
+    #contact img {
+        max-height: auto;
+        width: 30%;
+    }
+    .proj:hover .projecth2 {
+        font-size: 4.5em;
+    }
+}
+
+
+/*  TABLET MEDIUM_________________________________*/
+
+@media only screen and (max-width: 75em) {
+    #niks {
+        display: inline-block;
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    #expertise {
+        min-height: 60vh;
+    }
+}
+
+
+/*  TABLET KLEIN_________________________________*/
+
+@media only screen and (max-width: 65em) {
+    .intro-text {
+        font-size: 6.854em;
+        order: 1;
+        width: 100%;
+    }
+    .intro > img {
+        margin: 0em;
+        height: auto;
+        width: 20vw;
+        display: none;
+    }
+    .welkom {
+        max-width: 80%;
+    }
+    .profiel {
+        display: none;
+    }
+    .light {
+        color: #fff;
+    }
+    .navbar-custom,
+    .top-nav-collapse,
+    .navbar-main-vollapse {
+        color: #fff;
+        background: #0D0D0D;
+        /*KLEUR ACHTERGROND NAV */
+    }
+    .containerexp {
+        display: none;
+    }
+    #contact {
+        min-height: 50vh;
+        max-height: 50vh;
+        min-width: 50%;
+        max-width: 50%;
+    }
+}
+
+
+/* PHONE GROOT________________________________________*/
+
+@media only screen and (max-width: 61.9em) {
+    .containerexp {
+        display: none;
+    }
+    #niks {
+        display: none;
+    }
+}
+
+
+/* PHONE ________________________________________*/
+
+@media only screen and (max-width: 40em) {
+    /* FONTS */
+    h1 {
+        font-weight: 700;
+        font-size: 4.236em;
+    }
+    h2 {
+        font-size: 2.618em;
+    }
+    h3 {
+        font-size: 1.618em;
+        margin-bottom: 1.5em;
+    }
+    p {
+        font-size: 1em;
+    }
+    span {
+        font-family: $main-font;
+        display: inline-block;
+        font-size: 1em;
+    }
+
+    .intro > img {
+        margin: 0em;
+        height: auto;
+        width: 20vw;
+        display: none;
+    }
+    .intro > .btn {
+        display: block;
+    }
+    .intro-text {
+        font-size: 1em;
+        max-width: 90%;
+    }
+    #abouthome {
+        min-height: 500px;
+        max-height: 500px;
+    }
+    .welkom {
+        max-width: 100%;
+        padding: 1em;
+        min-height: auto;
+    }
+    #expertise {
+        min-height: auto;
+        max-height: auto;
+    }
+    .containerexp {
+        display: none;
+        /*max-width: 90%;
+        min-height: 287px;
+        max-height: 287px;
+        margin: 1em 5%;*/
+    }
+    /* PORTFOLIO PHONE */
+    .portfolioBanner {
+        display: block;
+        min-height: 15em;
+    }
+    .portBanner {
+        display: none;
+    }
+    .proj,
+    #contact {
+        min-height: 420px;
+        max-height: 420px;
+        min-width: 100%;
+        max-width: 100%;
+        margin-top: 1em;
+        box-shadow: $my-boxshadow;
+    }
+    
+    .project-image {
+        &>img {
+            height: auto!important;
+            width: 100%!important;
+        }
+    }
+    #project-image-dp {
+        &>img {
+            margin: 30% 0!important;
+            padding: 0 0.5em;
+        }
+    }
+    
+    #project-image-dtrh {
+        &>img {
+            margin: 20% 0!important;
+        }
+    }
+    #project-image-fe {
+        &>img {
+            margin: 30% 0!important;
+        }
+    }
+    
+    #project-image-vg {
+        &>img {
+            margin: 5% 0!important;
+        }
+    }
+
+}
