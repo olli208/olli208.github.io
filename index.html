@@ -35,7 +35,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top project-nav navbar-cv" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -49,159 +49,189 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse project-nav">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <!--<li>
-                        <a href="#page-top"></a></li>-->
-                    <li>
-                        <a class="page-scroll" href="#expertise">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolioNew">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="cv.html">CV</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <img class="logo img-responsive img-circle" src="img/ollitrans.png" alt="logo">
-        <h1 class="intro-text">Creative Front-end</h1>
-        <a href="#abouthome" class="btn btn-circle page-scroll">
-            <i class="fa fa-angle-double-down animated"></i>
-        </a>
+    <!-- Header-->
+    <header id="cvheader">
+        <div class="container text-center">
+            <h1>CV Oliver Oenang</h1>
+            <h2>Front-end developer</h2>
+        </div>
+
+        <div class="container cv-quicklinks">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="page-scroll" href="#scrollcontact">contact</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#scrollabout">about</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#scrollwork">work</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#scrollstudy">study</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#scrollskills">skills</a>
+                </li>
+            </ul>
+        </div>    
     </header>
 
 
+    <!-- geen intro nodig Intro Header -->
     <!-- About Section -->
-    <section id="abouthome" class="text-center">
-        <div class="col-lg-6 col-lg-offset-3 container">
-            <div id="welkom" class="text-left">
-                <h3>hello.</h3>
-                <p>My name is <b>Oliver Oenang</b>. In 2014 I started my education in <b>Communication & Multimediadesign (CMD)</b>.</p>
-                <p>Since then I've been working on making creative apps and websites using all kinds of tools. Here are some examples on my <b><a href="https://github.com/olli208">Github</a></b></p>                   
-            </div>
-        </div>
-    </section>
-
-    <section id="expertise" class="text-center">
+    <section id="cv" class="container-fluid">
         <div class="container">
-            <div class="col-md-3 containerexp">
-                <span class="glyphicon glyphicon-chevron-left"></span><span class="glyphicon glyphicon-chevron-right"></span>
-                <h3>front-<wbr>end</h3>
-                <h3 id="niks">des</h3>
-                <p>HTML</p>
-                <p>CSS <b>//</b> SASS</p>
-                <p>JavaScript <b>//</b> jQuery</p>
+            <div class="col-md-3 col-md-offset-2 text-right" id="links">
+                <h3 id="scrollcontact">contact</h3>
             </div>
 
-            <div class="col-md-3 containerexp">
-                <span class="glyphicon glyphicon-object-align-left"></span>
-                <h3>UI/UX <wbr>design</h3>
-                <p>Adobe Photoshop</p>
-                <p>Adobe Illustrator</p>
-                <p>and more.</p>
+            <div class="col-md-5 cvcontainer">
+                <h4>address</h4>
+                <p>Simon Vestdijkstraat 2</p>
+                <p>1382 DA Weesp </p>
+                <p>the Netherlands</p>
+                <h4 id="helemaalniks">1</h4>
+                <h4>contact</h4>              
+                <p>0647097774</p>
+                <h4 id="helemaalniks">1</h4>
+                <h4>mail</h4>
+                <p>oliveroenang@gmail.com</p>
+                <h4 id="helemaalniks">1</h4>
+                <h4>other</h4>
+                <ul>
+                    <li><p><a href="https://www.linkedin.com/in/oliver-oenang-250570b3"> LinkedIn</a></p></li>
+                    <li><p><a href="https://github.com/olli208"> projects i've done (Github)</a></p></li>
+                </ul>
+            </div>
+            
+            
+            <div class="col-md-3 col-md-offset-2 text-right" id="links">
+                <h3 id="scrollabout">about me</h3>
             </div>
 
-
-            <div class="col-md-3  containerexp">
-                <span class="glyphicon glyphicon-refresh"></span>
-                <h3>other</h3>
-                <p>Node.js</p>
-                <p>mongoDB/ mongoose</p>
-                <p>prototyping</p>
+            <div class="col-md-5 cvcontainer">
+                <h4>born</h4>
+                <p>20 aug 1993</p>
+                <h4 id="helemaalniks">1</h4>
+                <h4>birthplace</h4>              
+                <p>Antwerp</p>
+                <h4 id="helemaalniks">1</h4>
+                <h4>nationality</h4>
+                <p>Belgian</p>
+            </div>            
+            
+            <div class="col-md-3 col-md-offset-2 text-right" id="links">
+                <h3 id="scrollwork">work</h3>
             </div>
-        </div>
+
+            <div class="col-md-5 cvcontainer">
+                <h4>a friend of mine <b>// aug 2016 - december 2016</b></h4>
+                <b>Amsterdam - workstudent Front-end developer</b>
+                <p>Working as workstudent on projects such as Gemeentemuseum Den Haag</p>
+                
+                <h4 id="helemaalniks">1</h4>
+
+                <h4>Triggi <b>// 2016 (3 maanden)</b></h4>
+                <b>Amsterdam - intern Front-end developer</b>
+                <p>During my internship I worked on the date picker for the triggi app.</p>
+                
+                <h4 id="helemaalniks">1</h4>
+               
+                <h4>Pro-Tex Workwear <b>// 2013 (6 maanden)</b></h4>
+                <b>Weesp - intern marketing </b>
+                
+                <h4 id="helemaalniks">1</h4>
+                
+                <h4>Cowboysbelt <b>// 2011 (3 maanden)</b></h4>
+                <b>Weesp - intern wholesale </b>
+                
+                <h4 id="helemaalniks">1</h4>
+                
+                <h4>ICI Multimedia <b>// 2009 (3 maanden)</b></h4>
+                <b>Weesp - intern marketing</b>
+
+            </div>  
+            
+            <div class="col-md-3 col-md-offset-2 text-right" id="links">
+                <h3 id="scrollstudy">study</h3>
+            </div>
+
+            <div class="col-md-5 cvcontainer">
+                <h4>HBO Communication & Multimediadesign (CMD) <b>// 2014 - now</b></h4>
+                <b>Amsterdam -  Hogeschool van Amsterdam </b>
+                
+                <h4 id="helemaalniks">1</h4>
+                
+                <h4>MBO Medewerker marketing en communicatie (Marketing medewerker) niveau 4 <b>// 2012 - 2014</b></h4>
+                <b>Hilversum - MBO College Hilversum </b>
+                <p>Diploma on 1 juli 2014</p>
+                
+                <h4 id="helemaalniks">1</h4>
+                
+                <h4>MBO International Business Studies (IBS) niveau 4 <b>// 2009 - 2012</b></h4>
+                <b>Hilversum - MBO College Hilversum </b>
+                <p>Diploma Commercieel Medewerker niveau 3atn ROC van Amsterdam on September 18th 2012</p>
+                
+            </div>  
+            
+            <div class="col-md-3 col-md-offset-2 text-right" id="links">
+                <h3 id="scrollskills">skills</h3>
+            </div>
+
+            <div class="col-md-5 cvcontainer">
+                <h4>front-end</h4>
+                <ul>
+                    <li><p>HTML</p></li>
+                    <li><p>CSS/SASS</p></li>
+                    <li><p>vanilla JavaScript</p></li>
+                </ul>
+    
+                <h4 id="helemaalniks">1</h4>
+
+                <h4>Adobe</h4>
+                <ul>
+                    <li><p>Photoshop</p></li>
+                    <li><p>InDesign</p></li>
+                    <li><p>Illustrator</p></li>
+                    <li><p>Premiere</p></li>
+                    <li><p>After Effects</p></li>
+                </ul>
+
+                <h4 id="helemaalniks">1</h4>
+
+                <h4>misc</h4>
+                <ul>
+                    <li><p>Node.js</p></li>
+                    <li><p>realtime web apps</p></li>
+                    <li><p>prototyping</p></li>
+                    <li><p>mongoDB/mongoose</p></li>
+                    <li><p>Git</p></li>
+                </ul>
+
+                <h4 id="helemaalniks">1</h4>
+
+                <h4>languages</h4>
+                <ul>
+                    <li><p>Dutch</p></li>
+                    <li><p>English</p></li>
+                </ul>
+            </div> 
+           
+       </div>    
     </section>
 
-
-    <!-- projecten -->
-    <section id="portfolioNew">
-        <div class="container">
-            <div class="portfolioBanner"></div>
-        </div>
-
-        <div class="container-fluid">
-            <div class="portBanner"></div>
-
-            <div class="proj" id="proj7">
-                <div class="container">
-                    <h2 class="projecth2">Calendar input triggi app</h2>
-                    <p><a href="triggi.html" class="projknop">BEKIJK</a></p>
-                </div>
-            </div>
-
-            <div class="proj" id="proj1">
-                <div class="container">
-                    <h2 class="projecth2">BVA app voor Apple Watch</h2>
-                    <p><a href="DP.html" class="projknop">BEKIJK</a></p>
-                </div>
-            </div>
-
-            <div class="proj" id="proj2">
-                <div class="container">
-                    <h2 class="projecth2">Down The Rabbit Hole app design</h2>
-                    <p><a href="DTRH.html" class="projknop">BEKIJK</a></p>
-                </div>
-            </div>
-
-            <div class="proj" id="proj3">
-                <div class="container">
-                    <h2 class="projecth2">Respon<wbr>sive CMD intra<wbr>net</h2>
-                    <p><a href="FE.html" class="projknop">BEKIJK</a></p>
-                </div>
-            </div>
-
-            <div class="proj" id="proj4">
-                <div class="container">
-                    <h2 class="projecth2">Getal < 10 met Java<wbr>Script</h2>
-                    <p><a href="PR.html" class="projknop">BEKIJK</a></p>
-                </div>
-            </div>
-
-            <div class="proj" id="proj5">
-                <div class="container">
-                    <h2 class="projecth2">Music<wbr>player voor Android</h2>
-                    <p><a href="vorm.html" class="projknop">BEKIJK</a></p>
-                </div>
-            </div>
-
-<!--            <div class="proj" id="proj6">
-                <div class="container">
-                    <h2 class="projecth2">Eerste project HTML, CSS</h2>
-                    <p><a href="IS.html" class="projknop">BEKIJK</a></p>
-                </div>
-            </div>-->
-            
-            <!--NIEUWE PROJECTEN HIER TOEVOEGEN!!-->
-            <!------------------------------------->
-            <!------------------------------------->
-            <!------------------------------------->
-            <!------------------------------------->
-            <!------------------------------------->
-            
-            <div id="contact">
-                <h3>Get in touch</h3>
-                <img src="img/me.png" class="img-responsive img-circle" alt="mijn foto">
-                <p><b>E-mail:</b>:oliveroenang@gmail.com</p>
-                <p><b>Tel:</b>0647097774</p>
-                <p><b>Social:</b><a href="https://www.linkedin.com/in/oliver-oenang-250570b3"> LinkedIn</a></p>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; OLIVER OENANG 2016</p>
-        </div>
+        <p>Copyright &copy; OLIVER OENANG 2017</p>
+        <a href="https://github.com/olli208">MY GITHUB</a>
     </footer>
 
     <!-- jQuery -->
@@ -213,8 +243,25 @@
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
 
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
     <!-- Custom Theme JavaScript -->
     <script src="js/main.js"></script>
+
+
+    <!-- jQuery imageslider -->
+    <script src="imageslider/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="imageslider/js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
+    </script>
 
 </body>
 

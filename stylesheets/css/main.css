@@ -53,6 +53,59 @@ b {
   font-size: inherit;
   font-weight: 700; }
 
+/* CURRICILUM VITAE __________________________________*/
+.navbar-cv {
+  background: rgba(0, 0, 0, 0) !important; }
+
+#cvheader {
+  padding: 5em 0;
+  background-size: cover;
+  background: #fff; }
+
+#cvheader a {
+  color: #eb5070 !important; }
+
+#cvheader h1 {
+  font-family: roboto;
+  color: #eb5070; }
+
+#cvheader h2 {
+  color: #656565; }
+
+#cv .container div {
+  margin-top: 3em; }
+
+.cv-quicklinks {
+  display: flex;
+  justify-content: center; }
+
+.cv-quicklinks ul {
+  display: inherit; }
+
+.cvcontainer {
+  vertical-align: text-top;
+  min-height: 3em; }
+
+.cvcontainer p {
+  padding: 0;
+  margin: 0; }
+
+.cvcontainer h4 {
+  color: #eb5070; }
+
+.cvcontainer ul {
+  padding-left: 1em; }
+
+#cv {
+  background: #f9f9f9;
+  min-height: auto;
+  padding: 2.5em 0; }
+
+#links {
+  color: #656565;
+  vertical-align: text-top;
+  min-height: 3em; }
+
 * {
   box-sizing: border-box; }
 
@@ -91,11 +144,12 @@ html {
 
   /* NAVIGATION BAR_____________________*/
   .navbar-custom {
-    text-transform: uppercase;
     font-family: roboto, Helvetica, Arial, sans-serif;
     padding-top: 0.1em;
     max-height: 3em;
-    background: #f9f9f9;
+    background: #eb5070;
+    position: absolute;
+    top: 0;
     /*KLEUR ACHTERGROND NAV */
     -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
@@ -148,14 +202,15 @@ html {
     color: #eb5070; } }
 /*INTRO */
 .intro {
-  min-height: 65vh;
-  max-height: 65vh;
+  height: 100%;
+  height: 100vh;
   display: flex;
   width: 100%;
+  width: 100vw;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background: #eb5070;
   background-size: cover;
   transition: height 999999s; }
   .intro .intro-text {
@@ -664,59 +719,6 @@ footer {
       color: white; }
     .project-container #project-info-tr li {
       color: inherit; }
-
-/* CURRICILUM VITAE __________________________________*/
-.navbar-cv {
-  background: rgba(0, 0, 0, 0); }
-
-#cvheader {
-  padding: 5em 0;
-  background-size: cover;
-  background: #fff; }
-
-#cvheader a {
-  color: #eb5070 !important; }
-
-#cvheader h1 {
-  font-family: roboto;
-  color: #eb5070; }
-
-#cvheader h2 {
-  color: #656565; }
-
-#cv .container div {
-  margin-top: 3em; }
-
-.cv-quicklinks {
-  display: flex;
-  justify-content: center; }
-
-.cv-quicklinks ul {
-  display: inherit; }
-
-.cvcontainer {
-  vertical-align: text-top;
-  min-height: 3em; }
-
-.cvcontainer p {
-  padding: 0;
-  margin: 0; }
-
-.cvcontainer h4 {
-  color: #eb5070; }
-
-.cvcontainer ul {
-  padding-left: 1em; }
-
-#cv {
-  background: #f9f9f9;
-  min-height: auto;
-  padding: 2.5em 0; }
-
-#links {
-  color: #656565;
-  vertical-align: text-top;
-  min-height: 3em; }
 
 /* TABLET GROOT ___________________________________*/
 @media only screen and (max-width: 100em) {

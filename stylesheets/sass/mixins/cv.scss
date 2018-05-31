@@ -1,0 +1,66 @@
+/* CURRICILUM VITAE __________________________________*/
+.navbar-cv {
+    background: rgba(0, 0, 0, 0)!important;
+}
+
+#cvheader {
+    padding: 5em 0;
+    background-size: cover;
+    background: #fff;
+}
+
+#cvheader a {
+    color: $accent-color!important;
+}
+
+#cvheader h1 {
+    font-family: $main-font;
+    color: $accent-color;
+}
+
+#cvheader h2 {
+    color: $p-color;
+}
+
+#cv .container div{
+    margin-top: 3em;
+}
+
+.cv-quicklinks {
+    display: flex;
+    justify-content: center;
+}
+
+.cv-quicklinks ul {
+    display: inherit; 
+}
+
+.cvcontainer {
+    vertical-align: text-top;
+    min-height: 3em;
+}
+
+.cvcontainer p {
+    padding: 0;
+    margin: 0;
+}
+
+.cvcontainer h4 {
+    color: $accent-color;
+}
+
+.cvcontainer ul {
+    padding-left: 1em;
+}
+
+#cv {
+    background: $bg-color;
+    min-height: auto;
+    padding: 2.5em 0;
+}
+
+#links {
+    color: $p-color;
+    vertical-align: text-top;
+    min-height: 3em;
+}
