@@ -185,6 +185,8 @@ header .container {
 
   .project-card {
     font-size: 1.25rem;
+    height: 250px;
+
   }
 }
 
