@@ -22,10 +22,13 @@
 
     <!-- Header-->
     <header class="header">
-        <div class="container">
+        <div class="container is-flex">
+            <div class="self-image">
+
+            </div>
             <div class="section">
                 <h1>Oliver Oenang</h1>
-                <h2>front end developer</h2>
+                <h3>front end developer</h3>
             </div>
         </div>
     </header>
@@ -78,29 +81,32 @@
     <div class="container">
         <section class="section is-projects">
             <h2 class="">
-                projects
+                latest projects
             </h2>
 
             <div class="projects-slider-container">
                 <div class="carousel-controls">
-                    <a target="_blank" href="https://github.com/olli208">my Github</a>
                 </div>   
 
                 <div class="projects-slider">
                     <div id="project-1" class="project-card">
-                        
+                        <h3><a target="_blank" href="https://github.com/olli208/nav-animation">nominow design system concept</a></h3>
                     </div>
-                    <div class="project-card">
-                        project 2
+
+                    <div id="project-2" class="project-card">
+                        <h3><a target="_blank" href="https://github.com/olli208/slack-knowledge-collector">x-lab digest</a></h3>
                     </div>
-                    <div class="project-card">
-                        project 3
+
+                    <div id="project-3" class="project-card">
+                        <h3><a target="_blank" href="https://github.com/olli208/spotify-dashboard">spotify playlist genre analyzer</a></h3>
                     </div>
-                    <div class="project-card">
-                        project 4
+
+                    <div id="project-4" class="project-card">
+                        <h3><a target="_blank" href="https://github.com/olli208/weather-app">weather app</a></h3>
                     </div>
-                    <div class="project-card">
-                        project 5
+
+                    <div id="more" class="project-card">
+                        <a target="_blank" href="https://github.com/olli208">more projects...</a>
                     </div>
                 </div>  
             </div>
@@ -181,7 +187,6 @@
     <!-- Footer -->
     <footer class="footer">
         <p>Copyright &copy; OLIVER OENANG <span class="what-year-is-it">1900</span></p>
-        <a href="https://github.com/olli208">MY GITHUB</a>
     </footer>
 
 
@@ -194,9 +199,10 @@
     <script>
         $(document).ready(function(){
             $('.projects-slider').slick({
+                infinite: false,
                 slidesToShow: 3,
                 appendArrows: $('.carousel-controls'),
-                prevArrow:'<img src="/img/prev.svg" alt="prev   -carousel"/>',
+                prevArrow:'<img src="/img/prev.svg" alt="prev-carousel"/>',
                 nextArrow:' <img src="/img/next.svg" alt="next-carousel"/>',
                 slidesToScroll: 1
                 // autoplay: true,

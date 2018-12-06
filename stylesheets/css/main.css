@@ -21,12 +21,6 @@ body, p {
   color: #202124;
 }
 
-a {
-  font-family: 'Product Sans', 'Roboto', arial,  sans-serif;
-  color: #202124; 
-  font-weight: 500;
-}
-
 h1 {
   font-size: 3em; 
   margin: 0;
@@ -48,6 +42,11 @@ h3 {
 header {
   background: #f9f9f9;
   /* display: flex; */
+}
+
+header .container {
+  justify-content: center;
+  align-items: center;
 }
 
 .container section h2 {
@@ -83,13 +82,7 @@ header {
   position: relative;
 }
 
-.slick-list {
-  /* overflow: visible; */
-}
-
 .projects-slider-container {
-  /* position: absolute;
-  left: 0; */
   width: 100vw;
 }
 
@@ -97,10 +90,59 @@ header {
   height: 200px;
   width: 300px;
   background-image: linear-gradient(to bottom right, orange, hotpink);
-  margin: .5rem 1rem 1rem 0rem;
+  margin: .5rem 1rem 1rem .25rem;
   border-radius: 10px;
   padding: 10px;
   cursor: -webkit-grab;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 1px solid #666666;
+  font-family: 'Product Sans', 'Roboto', arial,  sans-serif;
+  font-weight: 700;
+}
+
+.project-card a {
+  background: linear-gradient(to bottom right, orange, hotpink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.self-image {
+  background: url('/img/me.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+#project-1 {
+  background-image: url('/img/p1.gif');
+}
+
+#project-2 {
+  background-image: url('/img/p2.gif');
+}
+
+#project-3 {
+  background-image: url('/img/p3.gif');
+}
+
+#project-4 {
+  background-image: url('/img/p4.png');
+}
+
+#more {
+  width: 200px!important;
+}
+
+#more a {
+  color: #ffffff!important;
+  background: none;
+  -webkit-text-fill-color: white;
 }
 
 .carousel-controls {
@@ -108,14 +150,6 @@ header {
   justify-content: space-between;
   width: 60px;
   margin-bottom: .5rem;
-}
-
-.carousel-controls a {
-  position: absolute;
-  right: 10px;
-  background: linear-gradient(to bottom right, orange, hotpink);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .carousel-controls img {
@@ -126,21 +160,11 @@ header {
 
 .footer {
   padding: 1.5rem;
+  text-align: center;
 }
 
 .skills .section-content > div {
   margin-bottom: 1.5rem;
-}
-
-#project-1 {
-  background: url('https://streamable.com/s/v9ep2/fzjoeq')
-}
-
-@media (min-width: 60em) {
-  .container section .section-content h3,
-  .container section .section-content p {
-    max-width: 60%;
-  }
 }
 
 
@@ -158,4 +182,20 @@ header {
     min-width: 250px;
     max-width: 250px;
   }
+
+  .project-card {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 60em) {
+  .container section .section-content h3,
+  .container section .section-content p {
+    max-width: 60%;
+  }
+
+  .project-card {
+    font-size: 1.75rem;
+  }
+
 }
